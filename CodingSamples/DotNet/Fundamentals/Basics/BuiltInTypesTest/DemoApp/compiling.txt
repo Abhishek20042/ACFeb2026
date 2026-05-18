@@ -1,0 +1,31 @@
+A C# project is basically a collection C# source-code files with .cs extension organized in a 
+directory containing a single <Primary>.csproj xml file which specifies properties and items 
+required for compiling these files by executing 'dotnet build' from this directory and if this 
+command succeeds without any error, it outputs following files in the directory (can be set
+with -o option) <BaseOutputPath=./bin>/<Configuration=Debug>/<TargetFramework>
+
+1. For project with any OutputType(default is Library):
+
+<Primary>.dll
+assembly containing the types compiled from *.cs files within this project directory
+
+<Primary>.pdb
+includes symbols required for debugging above <Primary>.dll
+
+<Primary>.deps.json
+specifies dependencies of above <Primary>.dll
+
+<Secondary>.dll
+any other assembly copied from an external project/package item referenced by this project
+
+
+2. For project with OutputType=Exe:
+
+<Primary>.runtimeconfig.json
+specifies runtime-options required for executing above <Primary>.dll
+
+<Primary> or <Primary>.exe (Windows)
+platform specific host for executing above <Primary>.dll without dotnet command
+
+
+

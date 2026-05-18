@@ -1,0 +1,113 @@
+    1  ls
+    2  cd Course/
+    3  dotnet --version
+    4  mkdir -p DotNet/Fundamentals/Basics
+    5  cd DotNet/Fundamentals/Basics
+    6  ls
+    7  vi Hello1.il
+    8  vi Hello1.runtimeconfig.json
+    9  dotnet --version
+   10  dotnet --list-runtimes
+   11  ls
+   12  wget -q iitdac.met.edu/shared/dotnet/iltools.sh
+   13  ls
+   14  bash iltools.sh
+   15  dotnet ilasm -dll Hello1.il
+   16  ls
+   17  dotnet Hello1.dll
+   18  vi Hello1.il
+   19  ll
+   20  vi Hello1.runtimeconfig.json 
+   21  mv Hello1.runtimeconfig.json Hello1.runtimeconfig.json0
+   22  dotnet Hello1.dll
+   23  mv Hello1.runtimeconfig.json0 Hello1.runtimeconfig.json
+   24  dotnet Hello1.dll
+   25  vi Hello1.il
+   26  uname -m
+   27  scp Hello1.dll Hello1.runtimeconfig.json unipro@linuxarm.km-hussain.xyz:Testing
+   28  ssh unipro@linuxarm.km-hussain.xyz
+   29  vi Hello2.cs
+   30  dotnet build Hello2.cs -o bin
+   31  ls bin/
+   32  dotnet bin/Hello2.dll
+   33  vi bin/Hello2.runtimeconfig.json 
+   34  ./bin/Hello2 
+   35  vi Hello2.cs
+   36  dotnet bin/Hello2.dll
+   37  dotnet ildasm bin/Hello2.dll
+   38  dotnet bin/Hello2.dll
+   39  cd ..
+   40  ls
+   41  cd Java/
+   42  ls
+   43  cd Fundamentals/
+   44  ls
+   45  cd ..
+   46  ls
+   47  cd DotNet/
+   48  ls
+   49  cd Fundamentals/
+   50  ls
+   51  clear
+   52  history >cmd16-05-2026_morning.txt
+   53  cd ..
+   54  cp -r DotNet/ /mnt/d/ACFeb2026/
+   55  cd DotNet/
+   56  ls
+   57  ls Fundamentals/
+   58  ls
+   59  clear
+   60  ls
+   61  cd Fundamentals/Basics/
+   62  mkdir BuiltInTypesTest
+   63  cd BuiltInTypesTest/
+   64  mkdir DemoApp
+   65  cd DemoApp/
+   66  vi Investment.cs
+   67  vi Program.cs
+   68  vi DemoApp.csproj
+   69  dotnet build
+   70  vi DemoApp.csproj
+   71  rm -r deploy44/
+   72  dotnet build
+   73  ls
+   74  dotnet deploy/Release/net10.0/DemoApp.dll
+   75  vi DemoApp.csproj
+   76  dotnet build
+   77  dotnet deploy/Release/net10.0/DemoApp.dll
+   78  vi DemoApp.csproj
+   79  dotnet build
+   80  dotnet deploy/Debug/net10.0/DemoApp.dll
+   81  dotnet build -c Release
+   82  vi DemoApp.csproj
+   83  dotnet build
+   84  vi DemoApp.csproj
+   85  rm -r deploy/ bin/
+   86  dotnet build
+   87  dotnet deploy/Release/net10.0/DemoApp.dll
+   88  ./deploy/Release/net10.0/DemoApp
+   89  vi Investment.cs 
+   90  dotnet deploy/Release/net10.0/DemoApp.dll
+   91  dotnet run
+   92  ls deploy/Release/net10.0/
+   93  wget -q iitdac.met.edu/shared/dotnet/compiling.txt
+   94  vi compiling.txt 
+   95  code .
+   96  dotnet run 200000 5
+   97  dotnet run 25000 12
+   98  cd ..
+   99  mkdir StructTypeTest
+  100  cd StructTypeTest/
+  101  mkdir DemoApp1
+  102  cd DemoApp1/
+  103  cp ../../BuiltInTypesTest/DemoApp/DemoApp.csproj .
+  104  code .
+  105  dotnet run 25000 12
+  106  dotnet run 200000 5
+  107  dotnet run 25000 12
+  108  dotnet run 200000 5
+  109  dotnet run 25000 12
+  110  dotnet run 200000 5
+  111  cd ..
+  112  ls
+  113  history >cmd18-05-2026_morning.txt 
