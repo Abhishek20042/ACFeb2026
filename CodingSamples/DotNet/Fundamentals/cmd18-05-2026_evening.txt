@@ -1,0 +1,21 @@
+    1  cd Fundamentals/Basics/StructTypeTest/DemoApp1/
+    2  code .
+    3  dotnet run 25000 12
+    4  cd ..
+    5  cp -r DemoApp1/ DemoApp2/
+    6  cd DemoApp2/
+    7  code .
+    8  dotnet run 25000 12
+    9  vi ../DemoApp1/Program.cs 
+   10  dotnet run 25000 12
+   11  dotnet run 75000 5
+   12  dotnet run 200000 5
+   13  cd ../..
+   14  ls
+   15  mkdir InheritanceTest
+   16  cd InheritanceTest/
+   17  vi ../../Basics/StructTypeTest/DemoApp1/Program.cs 
+   18  pwd
+   19  cd ../..
+   20  ls
+   21  history >cmd18-05-2026_evening.txt 

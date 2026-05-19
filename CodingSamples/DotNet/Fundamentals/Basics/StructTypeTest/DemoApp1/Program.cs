@@ -20,7 +20,7 @@ class Program
         Investment myinv = new Investment(p, n);
         Console.WriteLine("Future value in risk-free investment: {0:0.00}", myinv.FutureValue());
         myinv.AllowRisk(true);
-        Console.WriteLine("Future value in riskful investment: {0:0.00}", myinv.FutureValue());
+        Console.WriteLine("Future value in low-risk investment: {0:0.00}", myinv.FutureValue());
         Advise(ref myinv); //passing reference using 'ref' operator
         Console.WriteLine("Future value in smart investment: {0:0.00}", myinv.FutureValue());
     }
