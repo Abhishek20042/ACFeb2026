@@ -1,0 +1,24 @@
+    1  pwd
+    2  clear
+    3  ls
+    4  cd InheritanceTest/
+    5  ls
+    6  mkdir ClassTypeTest
+    7  cd ClassTypeTest/
+    8  mkdir DemoApp1
+    9  cd DemoApp1/
+   10  cd ..
+   11  mv InheritanceTest/ ..
+   12  cd ../InheritanceTest/
+   13  ls
+   14  cd ..
+   15  ls
+   16  mv InheritanceTest/ Inheritance
+   17  cd Inheritance/ClassTypeTest/DemoApp1/
+   18  cp ../../../Basics/StructTypeTest/DemoApp1/DemoApp.csproj .
+   19  code .
+   20  dotnet run
+   21  ls
+   22  cd ..
+   23  ls
+   24  history >cmd19-05-2026_morning.txt 
