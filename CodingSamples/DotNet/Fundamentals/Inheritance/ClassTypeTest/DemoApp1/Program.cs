@@ -11,8 +11,19 @@ class Program
 
     private static double Tax(Employee emp)
     {
+        //every instance contains a handle to the method-table of
+        //the type from which it was initialized (by new operator)
+        //and invocation of any virtual method is dispatched through
+        //this table (dynamic binding)
         double i = emp.Income();
         return i > 10000 ? 0.15 * (i - 10000) : 0;
+    }
+
+    private static double Bonus(Employee? emp)
+    {
+        if(emp == null || emp is SalesPerson)
+            return 0;
+        return 0.05 * emp.Income();
     }
 
     public static void Main()
@@ -24,9 +35,10 @@ class Program
         Appraise(jack);
         Console.WriteLine("Jack's new Income is {0:0.00}", jack.Income());
         //Appraise(null);
-        Console.WriteLine("Jack's Tax is {0:0.00}", Tax(jack));
+        Console.WriteLine("Jack's Tax is {0:0.00} and Bonus is {1:0.00}", Tax(jack), Bonus(jack));
         SalesPerson jill = new SalesPerson(184, 53, 62000);
         Console.WriteLine("Jill's Income is {0:0.00}", jill.Income());
-        Console.WriteLine("Jill's Tax is {0:0.00}", Tax(jill));
+        Console.WriteLine("Jill's Tax is {0:0.00} and Bonus is {1:0.00}", Tax(jill), Bonus(jill));
+        Console.WriteLine("Null Bonus: {0}", Bonus(null));
     }
 }
