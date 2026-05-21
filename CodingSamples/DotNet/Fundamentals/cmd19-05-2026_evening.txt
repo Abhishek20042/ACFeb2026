@@ -1,0 +1,15 @@
+    1  clear
+    2  dotnet run
+    3  cd Fundamentals/Inheritance/ClassTypeTest/DemoApp1/
+    4  dotnet run
+    5  cd ..
+    6  mkdir DemoApp2
+    7  cd DemoApp2/
+    8  cp ../DemoApp1/DemoApp.csproj .
+    9  code .
+   10  dotnet run
+   11  dotnet ildasm bin/Debug/net10.0/DemoApp.dll >> DemoApp.il
+   12  pwd
+   13  cd ../../../..
+   14  cd Fundamentals/
+   15  history >cmd19-05-2026_evening.txt 

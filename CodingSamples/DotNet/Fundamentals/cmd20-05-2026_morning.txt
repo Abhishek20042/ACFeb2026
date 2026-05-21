@@ -1,0 +1,13 @@
+    1  pwd
+    2  cd Fundamentals/
+    3  ls
+    4  cd Inheritance/
+    5  mkdir InterfaceTest
+    6  cd InterfaceTest/
+    7  dotnet new classlib -n Banking
+    8  cd Banking/
+    9  ls
+   10  code .
+   11  pwd
+   12  cd ../../..
+   13  history >cmd20-05-2026_morning.txt 
