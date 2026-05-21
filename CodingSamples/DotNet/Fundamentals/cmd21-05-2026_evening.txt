@@ -1,0 +1,26 @@
+  789  cd Course/DotNet/
+  790  cd Fundamentals/
+  791  ls
+  792  mkdir Generic
+  793  cd Generic/
+  794  mkdir TypeParamTest
+  795  cd TypeParamTest/
+  796  dotnet new console -n DemoApp -o DemoApp1
+  797  cd DemoApp1/
+  798  code .
+  799  dotnet run 67
+  800  dotnet run 78
+  801  dotnet run 67
+  802  dotnet run 78
+  803  dotnet run 67
+  804  dotnet run 78
+  805  dotnet run 67
+  806  dotnet ildasm bin/Debug/net10.0/DemoApp.dll > DemoApp.il1
+  807  dotnet run 67
+  808  dotnet run 78
+  809  dotnet ildasm bin/Debug/net10.0/DemoApp.dll > DemoApp.il
+  810  cp ../../../Inheritance/ClassTypeTest/DemoApp2/Interval.cs .
+  811  dotnet run
+  812  pwd
+  822  history > cmd21-05-2026_evening.txt 
+

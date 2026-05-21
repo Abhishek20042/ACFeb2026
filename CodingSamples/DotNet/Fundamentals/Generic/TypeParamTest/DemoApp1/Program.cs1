@@ -1,0 +1,24 @@
+﻿namespace DemoApp;
+
+class Program
+{
+    static object Select(int choice, object first, object second)
+    {
+        if((choice % 2) == 1)
+            return first;
+        return second;
+    }
+
+    static void Main(string[] args)
+    {
+        if(args.Length > 0)
+        {
+            int s = int.Parse(args[0]);
+            string ss = (string)Select(s, "Sunday", "Monday");
+            Console.WriteLine($"Selected string value = {ss}");
+            double sd = (double)Select(s, 4.75, 7.25);
+            Console.WriteLine($"Selected double value = {sd}");
+            double ssd = (double)Select(s, "April", 5.5);
+        }
+    }
+}
