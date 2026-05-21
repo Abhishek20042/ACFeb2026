@@ -1,0 +1,20 @@
+    1  clear
+    2  cd Fundamentals/Inheritance/
+    3  ls
+    4  cd InterfaceTest/
+    5  ls
+    6  dotnet new console -n DemoApp -o DemoApp2
+    7  cd DemoApp2/
+    8  code .
+    9  dotnet run Jack 80
+   10  dotnet run Jill 8
+   11  dotnet run Jim 55
+   12  dotnet run Jack 80
+   13  dotnet run Jill 8
+   14  dotnet run Jim 55
+   15  dotnet run Jack 80
+   16  dotnet run Jill 8
+   17  dotnet run Jim 55
+   18  pwd
+   19  cd ../../..
+   20  history >cmd21-05-2026_morning.txt 
