@@ -1,0 +1,18 @@
+    1  pwd
+    2  cd Generic/TypeParamTest/DemoApp2/
+    3  code .
+    4  cd ../
+    5  ls
+    6  cd ..
+    7  mkdir EnumerableTest
+    8  cd EnumerableTest/
+    9  dotnet new console -n DemoApp -o DemoApp1
+   10  cd DemoApp1/
+   11  cp ../../TypeParamTest/DemoApp2/SimpleStack.cs .
+   12  cp ../../TypeParamTest/DemoApp2/Interval.cs .
+   13  code .
+   14  dotnet run
+   15  pwd
+   16  cd ../../../../
+   17  cd Fundamentals/
+   18  history > cmd22-05-2026_evening.txt 
