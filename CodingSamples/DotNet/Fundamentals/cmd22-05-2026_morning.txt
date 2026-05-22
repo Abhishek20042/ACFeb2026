@@ -1,0 +1,15 @@
+    1  pwd
+    2  cd Fundamentals/Generic/
+    3  ls
+    4  cd TypeParamTest/
+    5  ls
+    6  dotnet new console -n DemoApp -o DemoApp2 --use-program-main
+    7  code .
+    8  cd DemoApp2/
+    9  code .
+   10  dotnet run
+   11  cp ../DemoApp1/Interval.cs .
+   12  dotnet run
+   13  pwd
+   14  cd ../../../
+   15  history >cmd22-05-2026_morning.txt 
