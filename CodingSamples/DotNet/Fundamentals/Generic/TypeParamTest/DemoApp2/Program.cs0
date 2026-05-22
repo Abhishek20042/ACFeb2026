@@ -1,0 +1,26 @@
+﻿namespace DemoApp;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        //closed generic type with string for type-parameter
+        SimpleStack<string> a = new SimpleStack<string>();
+        a.Push("Monday");
+        a.Push("Tuesday");
+        a.Push("Wednesday");
+        a.Push("Thursday");
+        a.Push("Friday");
+        //a.Push(12.3);
+        while(!a.Empty())
+            Console.WriteLine(a.Pop());
+        SimpleStack<Interval> b = new SimpleStack<Interval>();
+        b.Push(new Interval(4, 31));
+        b.Push(new Interval(7, 12));
+        b.Push(new Interval(6, 53));
+        b.Push(new Interval(5, 24));
+        Console.WriteLine("--------------------------");
+        while(!b.Empty())
+            Console.WriteLine(b.Pop());
+    }
+}
