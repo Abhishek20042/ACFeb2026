@@ -2,7 +2,13 @@
 
 class Program
 {
-    static void PrintStack(IStackReader<object> store)
+    static void PrintStack(SimpleStack<string> store)
+    {
+        while(!store.Empty())
+            Console.WriteLine(store.Pop());
+    }
+
+    static void PrintStack(SimpleStack<Interval> store)
     {
         while(!store.Empty())
             Console.WriteLine(store.Pop());

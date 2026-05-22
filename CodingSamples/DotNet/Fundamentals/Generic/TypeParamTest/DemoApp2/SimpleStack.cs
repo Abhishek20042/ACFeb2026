@@ -1,7 +1,7 @@
 namespace DemoApp;
 
 //defining an open generic type with type-parameter E
-public class SimpleStack<E>
+public class SimpleStack<E> : IStackReader<E>
 {
     //nested class cannot refer non-static members of outer class
     class Node
