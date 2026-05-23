@@ -7,6 +7,7 @@ a.Push("Thursday");
 a.Push("Friday");
 for(var e = a.GetEnumerator(); e.MoveNext();)
     Console.WriteLine(e.Current);
+a[2] = "Holiday"; //using indexer
 Console.WriteLine("------------------------");
 while(!a.Empty())
     Console.WriteLine(a.Pop());

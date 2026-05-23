@@ -1,0 +1,27 @@
+    1  cd Fundamentals/Generic/EnumerableTest/DemoApp1/
+    2  code .
+    3  dotnet run
+    4  cd ..
+    5  dotnet new console -n DemoApp -o DemoApp2 
+    6  cd DemoApp2/
+    7  cp ../../TypeParamTest/DemoApp2/Interval.cs .
+    8  code .
+    9  dotnet run
+   10  dotnet run wednesday
+   11  dotnet run fiday
+   12  dotnet run friday
+   13  dotnet run monday
+   14  dotnet run sunday
+   15  dotnet run thursday
+   16  dotnet run
+   17  dotnet run sunday
+   18  dotnet run thursday
+   19  rm -r bin/ obj/
+   20  cd ..
+   21  ls
+   22  ls DemoApp1/
+   23  rm -r DemoApp1/bin/
+   24  rm -r DemoApp1/obj/
+   25  ls
+   26  cd ..
+   27  history > cmd23-05-2026_morning.txt 
