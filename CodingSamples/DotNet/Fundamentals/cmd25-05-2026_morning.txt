@@ -1,0 +1,17 @@
+    1  cd Fundamentals/Functional/
+    2  ls
+    3  mkdir LinqTest
+    4  cd LinqTest/
+    5  dotnet new console -n DemoApp -o DemoApp1
+    6  cd DemoApp1/
+    7  code .
+    8  dotnet run items intel
+    9  dotnet run items samsung
+   10  dotnet run items amd
+   11  dotnet run items seagate
+   12  dotnet run customers 0
+   13  dotnet run customers 50000
+   14  dotnet run customers 80000
+   15  dotnet run customers 100000
+   16  dotnet run customers 200000
+   27  history > cmd25-05-2026_morning.txt 
