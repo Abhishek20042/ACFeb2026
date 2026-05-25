@@ -1,0 +1,14 @@
+    3  cd Functional/LinqTest/
+    4  ls
+    5  dotnet new console -n DemoApp -o DemoApp2
+    6  cd DemoApp2
+    7  wget -q iitdac.met.edu/shared/data/suppliers.csv
+    8  code .
+    9  dotnet run
+   10  dotnet run cpu
+   11  dotnet run mouse
+   12  dotnet run monitor
+   13  wget -q iitdac.met.edu/shared/data/suppliers.xml
+   14  dotnet run
+   15  dotnet run motherboard
+   29  history > cmd25-05-2026_evening.txt 
