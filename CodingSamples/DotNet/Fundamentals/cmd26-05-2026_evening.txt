@@ -1,0 +1,49 @@
+    1  pwd
+    2  cd Reflection/IntrospectionTest/BankFinLib/
+    3  code .
+    4  dotnet pack
+    5  ls bin/Release/
+    6  cd ../DemoApp2/
+    7  vi DemoApp.csproj 
+    8  dotnet restore -s ../BankFinLib/bin/Release/
+    9  dotnet build
+   10  ll bin/Debug/net10.0/
+   11  code .
+   12  dotnet run 500000 EducationLoan
+   13  dotnet run 500000 PersonalLoan
+   14  dotnet run 500000 HomeLoan
+   15  dotnet run 500000 EducationLoan
+   16  dotnet run 500000 HomeLoan
+   17  dotnet run 500000 PersonalLoan
+   18  dotnet run 500000 CarLoan
+   19  dotnet run 500000 PersonalLoan
+   20  cd ..
+   21  cd BankFinLib/
+   22  code .
+   23  dotnet pack
+   24  ls bin/Release/
+   25  cd ..
+   26  cd DemoApp2/
+   27  code .
+   28  dotnet restore -s ../BankFinLib/bin/Release/
+   29  ls ~/.nuget/packages/met.bank.financing/
+   30  dotnet run 500000 EducationLoan Common
+   31  dotnet run 500000 EducationLoan Scholar
+   32  dotnet run 500000 PersonalLoan Common
+   33  dotnet run 500000 PersonalLoan Scholar
+   34  dotnet run 500000 PersonalLoan Employee
+   35  dotnet run 500000 HomeLoan Common
+   36  dotnet run 500000 HomeLoan Woman
+   37  dotnet run 500000 HomeLoan Welfare
+   38  dotnet run 500000 HomeLoan Man
+   39  cd ../..
+   40  mkdir AttributeTest
+   41  cd AttributeTest/
+   42  cp -r ../IntrospectionTest/BankFinLib/ .
+   43  cd BankFinLib/
+   44  rm -r bin/
+   45  code .
+   46  dotnet pack
+   47  ls bin/Release/
+   48  cd ..
+   49  history >cmd26-05-2026_evening.txt 
