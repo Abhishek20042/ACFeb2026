@@ -1,0 +1,33 @@
+    1  cd Fundamentals/
+    2  ls
+    3  mkdir Reflection
+    4  cd Reflection/
+    5  mkdir IntrospectionTest
+    6  cd IntrospectionTest/
+    7  dotnet new console -n DemoApp -o DemoApp1 --use-program-main
+    8  cd DemoApp1/
+    9  code .
+   10  cp -r ../../../Functional/LinqTest/DemoApp1/Shopping/ .
+   11  dotnet run
+   12  cd ..
+   13  dotnet new classlib -n BankFinLib
+   14  cd BankFinLib/
+   15  ls
+   16  rm Class1.cs 
+   17  ls
+   18  code .
+   19  dotnet pack
+   20  ls bin/Release/
+   21  wget -q iitdac.met.edu/shared/dotnet/packaging.txt
+   22  cd ..
+   23  dotnet new console -n DemoApp -o DemoApp2 --use-program-main
+   24  cd DemoApp2
+   25  vi DemoApp.csproj 
+   26  dotnet add package MET.Bank.Financing -s ../BankFinLib/bin/Release/
+   27  vi DemoApp.csproj 
+   28  ls ~/.nuget/packages/met.bank.financing/
+   29  ls ~/.nuget/packages/met.bank.financing/1.0.0/
+   30  code .
+   31  dotnet build
+   32  ls bin/Debug/net10.0/
+   33  history > ~/Course/DotNet/Fundamentals/cmd26-05-2026_morning.txt 
