@@ -1,0 +1,28 @@
+namespace DemoApp;
+
+class JointAccount
+{
+    public int Balance { get; private set; }
+
+    private static int Evaluate(int bal, int amt, int sgn)
+    {
+        Thread.Sleep(amt / 100); //pause current thread for specified number of milliseconds
+        return bal + amt * sgn;
+    }
+
+    public bool Debit(int amount)
+    {
+        bool success = false;
+        if(Balance >= amount)
+        {
+            Balance = Evaluate(Balance, amount, -1);
+            success = true;
+        }
+        return success;
+    }
+
+    public void Credit(int amount)
+    {
+        Balance = Evaluate(Balance, amount, 1);
+    }
+}

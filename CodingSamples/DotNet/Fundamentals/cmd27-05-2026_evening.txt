@@ -1,0 +1,8 @@
+    1  pwd
+    2  cd Concurrency/ThreadingTest/
+    3  ls
+    4  dotnet new console -n DemoApp -o DemoApp2
+    5  cd DemoApp2
+    6  code .
+    7  dotnet run
+    8  history > ~/Course/DotNet/Fundamentals/cmd27-05-2026_evening.txt 
