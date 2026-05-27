@@ -1,5 +1,4 @@
-﻿using System.Reflection;
-using Finance;
+﻿using Finance;
 
 namespace DemoApp;
 
@@ -9,13 +8,13 @@ class Program
     {
         decimal p = decimal.Parse(args[0]);
         Type t = Type.GetType($"Finance.{args[1]},BankFinLib", true);
-        object policy = Activator.CreateInstance(t); 
-        MethodInfo scheme = t.GetMethod(args[2]);
+        //strict type-checking is disabled at compile-time for
+        //a variable declared with 'dynamic' as its type
+        dynamic policy = Activator.CreateInstance(t); //dynamic actvation
         int m = 10;
         for(int n = 1; n <= m; ++n)
         {
-            //verify method, locate implementation, box arguments and dispatch call
-            float r = (float)scheme.Invoke(policy, [p, n]); //late binding
+            float r = policy.Common(p, n); //generate call using runtime-binder (duck typing)
             decimal emi = LoanHelper.MonthlyInstallment(p, n, r);
             Console.WriteLine("{0, -6}{1, 16:0.00}", n, emi);
         }

@@ -1,0 +1,17 @@
+A NuGet Package is a compressed (zip) archive containing a compiled assembly 
+along with other files (private assets) required by this assembly and a 
+manifest (nuspec) file which specifies its dependencies. Such a package is used 
+by the developer of an assembly to share this assembly with other developers 
+using following commands
+
+1. dotnet pack 
+It builds the current project and then creates a package with file name as
+<PackageId>.<Version>.nupkg under <BaseOutputPath=bin>/<Configuration=Release> 
+directory, the PackageId (default: project-name) and Version (default: 1.0.0)
+can be specified using corresponding elements under PropertyGroup for current
+project.
+
+2. dotnet add package <PackageId> [-v <Version=latest>] [-s <source>]
+It restores the current project by installing the target package from the specified
+source (defaults to nuget.org feed if not specified) into the global nuget cache 
+and adds corresponding PackageReference element to ItemGroup of current project. 
