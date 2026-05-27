@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "AloCluBoyh8=",
+  "success": true,
+  "projectFilePath": "/home/cdac/Course/DotNet/Fundamentals/Reflection/IntrospectionTest/DemoApp2/DemoApp.csproj",
+  "expectedPackageFiles": [
+    "/home/cdac/.nuget/packages/met.bank.financing/1.1.0/met.bank.financing.1.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

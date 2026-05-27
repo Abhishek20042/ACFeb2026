@@ -1,23 +1,47 @@
 {
   "version": 3,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "MET.Bank.Financing/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/BankFinLib.dll": {}
+        },
+        "runtime": {
+          "lib/net10.0/BankFinLib.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "MET.Bank.Financing/1.1.0": {
+      "sha512": "RjTpj1S82Hh11TVSa9CiGwoPBUz/kPS69pf5MhFDPr/YUIEoVSOpLvbzdPkGtVKy4ccVVmtf1+dsYZsnR08/8A==",
+      "type": "package",
+      "path": "met.bank.financing/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net10.0/BankFinLib.dll",
+        "met.bank.financing.1.1.0.nupkg.sha512",
+        "met.bank.financing.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "MET.Bank.Financing >= 1.1.0"
+    ]
   },
   "packageFolders": {
     "/home/cdac/.nuget/packages/": {}
   },
   "project": {
-    "version": "1.1.0",
+    "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/cdac/Course/DotNet/Fundamentals/Reflection/IntrospectionTest/BankFinLib/BankFinLib.csproj",
-      "projectName": "MET.Bank.Financing",
-      "projectPath": "/home/cdac/Course/DotNet/Fundamentals/Reflection/IntrospectionTest/BankFinLib/BankFinLib.csproj",
+      "projectUniqueName": "/home/cdac/Course/DotNet/Fundamentals/Reflection/IntrospectionTest/DemoApp2/DemoApp.csproj",
+      "projectName": "DemoApp",
+      "projectPath": "/home/cdac/Course/DotNet/Fundamentals/Reflection/IntrospectionTest/DemoApp2/DemoApp.csproj",
       "packagesPath": "/home/cdac/.nuget/packages/",
-      "outputPath": "/home/cdac/Course/DotNet/Fundamentals/Reflection/IntrospectionTest/BankFinLib/obj/",
+      "outputPath": "/home/cdac/Course/DotNet/Fundamentals/Reflection/IntrospectionTest/DemoApp2/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/cdac/.nuget/NuGet/NuGet.Config"
@@ -49,6 +73,12 @@
     "frameworks": {
       "net10.0": {
         "targetAlias": "net10.0",
+        "dependencies": {
+          "MET.Bank.Financing": {
+            "target": "Package",
+            "version": "[1.1.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

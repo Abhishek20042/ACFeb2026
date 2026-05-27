@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "DemoApp/1.0.0": {
+        "dependencies": {
+          "MET.Bank.Financing": "1.1.0"
+        },
+        "runtime": {
+          "DemoApp.dll": {}
+        }
+      },
+      "MET.Bank.Financing/1.1.0": {
+        "runtime": {
+          "lib/net10.0/BankFinLib.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DemoApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MET.Bank.Financing/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RjTpj1S82Hh11TVSa9CiGwoPBUz/kPS69pf5MhFDPr/YUIEoVSOpLvbzdPkGtVKy4ccVVmtf1+dsYZsnR08/8A==",
+      "path": "met.bank.financing/1.1.0",
+      "hashPath": "met.bank.financing.1.1.0.nupkg.sha512"
+    }
+  }
+}

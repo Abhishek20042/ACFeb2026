@@ -1,0 +1,41 @@
+    1  clear
+    2  cd Fundamentals/Reflection/AttributeTest/BankFinLib/
+    3  dotnet pack
+    4  ildasm bin/Release/net10.0/BankFinLib.dll > BankFinLib.il
+    5  dotnet ildasm bin/Release/net10.0/BankFinLib.dll > BankFinLib.il
+    6  cd ..
+    7  dotnet new console -n DemoApp --use-program-main
+    8  cd DemoApp/
+    9  dotnet new nugetconfig
+   10  ls
+   11  vi nuget.config 
+   12  dotnet add package MET.Bank.Financing
+   13  vi DemoApp.csproj 
+   14  cp ../../IntrospectionTest/DemoApp2/Program.cs .
+   15  code .
+   16  dotnet run 500000 EducationLoan Common
+   17  dotnet run 500000 EducationLoan Scholar
+   18  dotnet run 500000 PersonalLoan Common
+   19  dotnet run 500000 HomeLoan Common
+   20  dotnet run 500000 HomeLoan Welfare
+   21  dotnet run 500000 CarLoan Common
+   22  dotnet run 500000 EducationLoan Common
+   23  cd ../../
+   24  cd ..
+   25  mkdir Concurrency
+   26  cd Concurrency/
+   27  mkdir ThreadingTest
+   28  cd ThreadingTest/
+   29  dotnet new console -n DemoApp -o DemoApp1 --use-program-main
+   30  cd DemoApp1/
+   31  code .
+   32  dotnet run
+   33  dotnet run 3
+   34  dotnet run
+   35  dotnet run 5
+   36  dotnet run 10
+   37  dotnet run 8
+   38  dotnet run 12
+   39  dotnet run 8
+   40  cd ..
+   41  history >cmd27-05-2026_morning.txt 
