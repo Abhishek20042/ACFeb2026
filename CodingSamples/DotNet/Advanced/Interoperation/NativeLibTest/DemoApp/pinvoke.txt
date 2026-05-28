@@ -1,0 +1,20 @@
+P/Invoke - Default Marshaling  
+
+--------------------------------------------------------------------
+C (unmanaged) type     		C# (managed) type 
+--------------------------------------------------------------------
+char                   		byte
+[unsigned] int         		[u]int, bool
+[unsigned] short int   		[u]short
+[unsigned] long int    		[u]int (windows), [u]nint (other)
+[unsigned] long long int 	[u]long
+float                     	float
+double               		double
+
+struct                  	struct
+enum                    	enum
+const char*               	string
+void*                    	nint
+[const] T*               	unsafe { T* }
+R (*)(T1, T2, ...)        	unsafe { delegate*<T1, T2, ... R>
+--------------------------------------------------------------------
