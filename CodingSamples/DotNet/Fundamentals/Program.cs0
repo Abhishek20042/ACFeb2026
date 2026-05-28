@@ -1,0 +1,19 @@
+namespace DemoApp;
+
+static class Activity
+{
+    [ThreadStatic]
+    private static string id;
+
+    public static string Client
+    {
+        get { return id; }
+        set { id = value; }
+    }
+
+    public static void Perform(int count)
+    {
+        int target = Environment.TickCount + 1000 * count;
+        while(Environment.TickCount < target);
+    }
+}
