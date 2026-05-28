@@ -1,0 +1,19 @@
+﻿namespace DemoApp;
+
+class Program
+{
+    static void DoComputing(int limit)
+    {
+        Console.Write("Computing...");
+        var c = new Computation();
+        long r = c.Compute(1, limit);
+        Console.WriteLine("Done!");
+        Console.WriteLine("Result = {0}, computed in {1:0.000} seconds.", r, c.Time());
+    }
+
+    static void Main(string[] args)
+    {
+        int n = int.Parse(args[0]);
+        DoComputing(n);
+    }
+}
