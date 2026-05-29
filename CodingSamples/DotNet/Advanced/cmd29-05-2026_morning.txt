@@ -1,0 +1,23 @@
+    1  cd Advanced
+    2  ls
+    3  cd Interoperation/
+    4  ls
+    5  cd DllImportTest/
+    6  dotnet new console -n DemoApp -o DemoApp2/
+    7  cd DemoApp1/
+    8  ls
+    9  cd ../DemoApp2/
+   10  ls
+   11  wget -qO- iitdac.met.edu/shared/native/legacy/x64/primes.tar.gz | tar x
+   12  code .
+   13  dotnet run 20 4
+   14  dotnet run 1000 3
+   15  dotnet run 1000 6
+   16  dotnet run 100 3
+   17  dotnet run 100 7
+   18  dotnet run 100 4
+   19  dotnet run 100 6
+   20  dotnet run 100 4
+   21  dotnet run 100 6
+   22  cd ..
+   23  history >cmd29-05-2026_morning.txt 

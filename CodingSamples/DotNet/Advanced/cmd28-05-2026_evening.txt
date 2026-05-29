@@ -1,0 +1,48 @@
+    1  ls\
+    2  ls
+    3  mkdir Interoperation
+    4  cd Interoperation/
+    5  mkdir NativeLibTest
+    6  cd NativeLibTest/
+    7  dotnet new console -n DemoApp --use-program-main
+    8  cd DemoApp/
+    9  wget -qO- iitdac.met.edu/shared/native/legacy/x64/asset.tar.gz | tar x
+   10  code .
+   11  objdump -t native/libddb.so 
+   12  objdump -t native/libsyd.so 
+   13  wget -q iitdac.met.edu/shared/dotnet/pinvoke.txt
+   14  cp pinvoke.txt ..
+   15  rm pinvoke.txt 
+   16  mv ../pinvoke.txt .
+   17  ll
+   18  dotnet run 23000 6 native/libddb.so 
+   19  dotnet run 23000 6 native/libsyd.so 
+   20  dotnet run 23000 6 native/libsl.so 
+   21  cd ..
+   22  mkdir DllImportTest
+   23  cd DllImportTest/
+   24  dotnet new console -n DemoApp -o DemoApp1 --use-program-main
+   25  dotnet build
+   26  cd DemoApp1/
+   27  dotnet build
+   28  dotnet run
+   29  vi ~/Course/Foundations/Basics/dijkstra.s 
+   30  as ~/Course/Foundations/Basics/dijkstra.s -o dijkstra.o
+   31  cd ~/Course/Foundations/Basics
+   32  ls
+   33  objdump -t dijkstra.o
+   34  ld -shared dijkstra.o -o libdijkstra.so
+   35  ls
+   36  cd ~/Course/DotNet/Advanced/Interoperation/DllImportTest/DemoApp1/
+   37  ls
+   38  cp ~/Course/Foundations/Basics/libdijkstra.so bin/Debug/net10.0/
+   39  ls bin/Debug/net10.0/
+   40  objdump -t bin/Debug/net10.0/libdijkstra.so 
+   41  code .
+   42  dotnet run 24 36
+   43  dotnet run 28 42
+   44  dotnet ildasm bin/Debug/net10.0/DemoApp.dll
+   45  dotnet build
+   46  dotnet ildasm bin/Debug/net10.0/DemoApp.dll
+   47  cd ..
+   48  history >cmd28-06-2026_evening.txt
