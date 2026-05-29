@@ -1,0 +1,17 @@
+    1  netstat -pnlt
+    2  ls
+    3  mkdir Communication
+    4  cd Communication/
+    5  mkdir ServerTest
+    6  cd ServerTest/
+    7  dotnet new console -n DemoApp1
+    8  cd DemoApp1/
+    9  code .
+   10  cd ..
+   11  rm -r DemoApp1/
+   12  dotnet new console -n DemoApp -o DemoApp1
+   13  cd DemoApp1/
+   14  code .
+   15  dotnet run
+   16  cd ../../../
+   17  history >cmd29-05-2026_evening.txt 
