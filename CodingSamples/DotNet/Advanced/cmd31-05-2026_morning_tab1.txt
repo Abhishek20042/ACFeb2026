@@ -1,0 +1,12 @@
+    1  nc localhost 4020
+    2  cd Communication/ServerTest/DemoApp2/
+    3  sqlite3 data/wholesale.db 
+    4  nc localhost 4020
+    5  vi data/retail.json 
+    6  nc localhost 4020
+    7  dotnet run
+    8  dotnet build -c Release
+    9  ./bin/Release/net10.0/DemoApp 
+   10  pwd
+   11  cd ../../../
+   12  history >cmd31-05-2026_morning_tab1.txt 

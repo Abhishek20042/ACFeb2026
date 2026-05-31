@@ -1,0 +1,17 @@
+    1  cd Advanced/Communication/ServerTest/DemoApp2/
+    2  sqlite3 data/wholesale.db 
+    3  dotnet add package Microsoft.Data.Sqlite
+    4  sqlite3 data/wholesale.db 
+    5  dotnet run
+    6  cd ../..
+    7  ls
+    8  mkdir ClientTest
+    9  cd ClientTest/
+   10  dotnet new console -n DemoApp
+   11  cd DemoApp/
+   12  code .
+   13  dotnet run
+   14  dotnet run localhost
+   15  pwd
+   16  cd ../../../
+   17  history >cmd31-05-2026_morning.txt
